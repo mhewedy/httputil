@@ -16,7 +16,7 @@ func GetUserRole(w http.ResponseWriter, r *http.Request) (i interface{}, err err
 
 	// do some logic to retrieve user's role
 
-	return struct {
+	return struct {				// will be written to http.ResponseWriter as JSON
 		Username string
 		Role     string
 	}{
